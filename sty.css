@@ -1,6 +1,41 @@
 * {
-  font-family: "Protest Guerrilla", sans-serif;
+  .dm-serif display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .dm-serif display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 }
 .headingdiv {
   font-size: 34px;
+}
+.popdiv {
+  background-color: aquamarine;
+  position: absolute;
+  left: 43vh;
+  top: 127px;
+  height: 73vh;
+  width: 99vh;
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+  z-index: 3;
+}
+#overlay {
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  backdrop-filter: blur(6px);
 }
